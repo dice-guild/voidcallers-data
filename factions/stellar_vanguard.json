@@ -1993,25 +1993,11 @@
     "legend_drill_sergeant": {"name": "Drill Sergeant", "description": "This model's unit adds +3\" to the short and long range of their weapons.", "points": 10}
   },
   "relics": {
-    "legend_master_duelist": {
-      "name": "Master Duelist",
-      "rule": "legend_master_duelist",
-      "description": "Upgrade one _Leader_ model with Master Duelist.",
-      "flavor": "This master of the blade has struck down countless foes, earning them this grim title.",
-      "points": 10
-    },
-    "legend_energy_shield": {
-      "name": "Personal Shield Generator",
-      "rule": {"id": "resistant", "x": 2},
-      "description": "Upgrade one _Leader_ or _Support_ model with Resistant(2).",
-      "flavor": "This shield generator can be overcharged to bounce back even the toughest attacks for a moment.",
-      "points": 20
-    },
-    "legend_drill_sergeant": {
-      "name": "Drill Sergeant",
-      "rule": "legend_drill_sergeant",
-      "description": "Upgrade one _Leader_ model with Drill Sergeant.",
-      "flavor": "Through years of hard training and bellowing commands the effective range of infantry can be pushed past the limit.",
+    "multi_scanner": {
+      "name": "Multi-Scanner",
+      "rule": "multi_scanner",
+      "description": "Upgrade one Operative with Multi-Scanner.",
+      "flavor": "A complex tool for detecting enemy presence.",
       "points": 10
     }
   },
