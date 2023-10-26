@@ -5,41 +5,6 @@
   "lore": "In a time of great strife and conflict across the cosmos, the once warring civilizations of the universe found themselves on the brink of annihilation. Countless lives were lost, planets devastated, and the fabric of the universe itself was threatened by the unending cycle of destruction.\n\nAmidst the chaos, a visionary alliance of the most advanced and enlightened of the human race emerged, realizing that the path of constant war and conquest would lead to the doom of all. This alliance, known as the United Star Accord, came together with a shared mission – to preserve peace and ensure the survival of humankind throughout the universe.\n\nTo fulfill this noble purpose, the United Star Accord created an army of superhuman marines like none ever seen before – the Stellar Vanguard. The creation of the Stellar Vanguard was a groundbreaking feat of science and cooperation, drawing upon the collective knowledge and expertise of the alliance's member civilizations.\n\nAt the heart of the Stellar Vanguard's creation lay the discovery of a cosmic phenomenon known as the Celestial Nexus – a rare and powerful cosmic event that occurred once in a millennia. Harnessing the energy of the Celestial Nexus, the United Star Accord initiated the Stellar Ascension Project. Through a carefully designed and ethically guided process, individuals from different species were selected to undergo the Stellar Ascension.\n\nDuring the Stellar Ascension, these chosen individuals were infused with celestial energy, undergoing a transformative process that unlocked the hidden potential within their genetic makeup. They became superhuman in every sense – their strength, agility, reflexes, and intellect far surpassed that of any natural being.\n\nYet, the Stellar Vanguard was not only powerful physically but also equipped with advanced technology and weaponry. Each member was equipped with a state-of-the-art Stellar Armor, capable of withstanding the harshest environments of space and the most formidable foes. The armor granted them the ability to traverse planets, traverse through wormholes, and even survive the vacuum of space.\n\nThe Stellar Vanguard became the beacon of hope and the peacekeeping force for the entire universe. They would intervene in conflicts, act as mediators, and offer their formidable might to quell any threats to peace. Their presence alone acted as a powerful deterrent against those who sought to disrupt the newfound harmony.\n\nOver time, the Stellar Vanguard's reputation as protectors and defenders grew, and countless beings across the universe looked up to them as symbols of hope and unity. They became ambassadors of the United Star Accord, promoting diplomacy and cooperation among civilizations, and working towards a future where peace would reign supreme.\n\nAs the Stellar Vanguard continued to carry out their mission, they encountered a myriad of challenges and sacrifices. Their journey was not without loss, but their unwavering commitment to peace and preservation fueled their resolve. Their collective spirit became a testament to the potential of unity and the boundless capacity of compassion and empathy to bridge the gaps between diverse species.\n\nThrough their actions, the Stellar Vanguard not only brought peace to the universe but also ushered in a new era of interstellar cooperation and shared knowledge. Their story would forever be etched into the annals of history, inspiring generations to come and reminding all that the path to peace was a journey worth undertaking – a journey that could reshape the destiny of the universe itself.",
   "color": "#0d407f",
   "hidden_units": {
-    "arch_marine": {
-      "name": "Arch-Marine",
-      "description": "One of the original founders of the Imperial Squad and an extremely powerful leader.",
-      "category": "hero",
-      "keywords": ["Heavy Infantry"],
-      "models": [
-        {
-          "name": "Arch-Marine",
-          "movement": 6,
-          "courage": 8,
-          "shoot": 8,
-          "fight": 8,
-          "defense": 11,
-          "reflexes": 7,
-          "rules": [
-            {"id": "inspiring", "x": "Infantry, Heavy Infantry"},
-            {"id": "leader", "x": "Infantry, Heavy Infantry"},
-            {"id": "limited", "x": 1},
-            {"id": "epic_tactician", "x": "Infantry, Heavy Infantry"},
-            {"id": "wounds", "x": 4}
-          ],
-          "weapons": ["arch_sword"],
-          "options": [
-            {"replaceWeapon": ["arch_sword"], "withWeapon": [{"id": "arch_fist", "count": 5}, {"id": "arch_claw", "count": 8}, {"id": "arch_hammer", "count": 4}]},
-            {"addWeapon": [{"id": "arch_fist", "count": 2}, {"id": "arch_claw", "count": 3}], "limit": 1},
-            {"addWeapon": ["arch_machinegun", "arch_pistol"]},
-            {"addRule": ["relic_shield", "jetpack"]}
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    }
-  },
-  "units": {
     "lieutenant": {
       "name": "Lieutenant",
       "description": "A fearless leader.",
@@ -582,53 +547,6 @@
         }
       ]
     },
-    "vanguard_squad": {
-      "name": "Vanguard Squad",
-      "description": "Elite trained marines sworn to protect humankind.",
-      "category": "core",
-      "models": [
-        {
-          "name": "Vanguard Sergeant",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": ["combat_rifle", "handweapon"],
-          "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
-            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
-            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
-            {
-              "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "twin_energy_handweapon", "count": 3},
-                {"id": "energy_greatweapon", "count": 2},
-                {"id": "energy_polearm", "count": 2}
-              ]
-            }
-          ],
-          "min": 1,
-          "max": 1
-        },
-        {"name": "Vanguard Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["combat_rifle", "handweapon"], "min": 4, "max": 9}
-      ],
-      "options": [
-        {"replaceWeapon": "combat_rifle", "withWeapon": ["marksman_rifle", "heavy_smg"]},
-        {"replaceWeapon": "combat_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "gravity_rifle", "thermal_rifle"], "modelLimit": "1/5"},
-        {
-          "replaceWeapon": "combat_rifle",
-          "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "fusion_cannon", "plasma_cannon", "gravity_cannon", "heavy_flamethrower", "thermal_lance", "autocannon"],
-          "modelLimit": "1/5"
-        },
-        {"addWeapon": "grenade_launcher_attachment", "modelLimit": "1/5"},
-        {"addRule": "multi_scanner", "modelLimit": 1},
-        {"addRule": "banner", "modelLimit": 1}
-      ]
-    },
     "gravite_vanguard_squad": {
       "name": "Gravite Vanguard Squad",
       "description": "Elite trained marines in heavy gravite armor.",
@@ -664,73 +582,6 @@
           "modelLimit": "1/5"
         },
         {"addRule": "multi_scanner", "modelLimit": 1}
-      ]
-    },
-    "scout_squad": {
-      "name": "Scout Squad",
-      "description": "Elite trained marines specialized in infiltration and stealth tactics.",
-      "category": "core",
-      "rules": ["scout"],
-      "models": [
-        {
-          "name": "Scout Sergeant",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 7,
-          "reflexes": 6,
-          "weapons": ["combat_rifle", "handweapon"],
-          "options": [
-            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
-            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
-            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
-            {
-              "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "twin_energy_handweapon", "count": 3},
-                {"id": "energy_greatweapon", "count": 2},
-                {"id": "energy_polearm", "count": 2}
-              ]
-            }
-          ],
-          "min": 1,
-          "max": 1
-        },
-        {"name": "Scout Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["combat_rifle", "handweapon"], "min": 4, "max": 9}
-      ],
-      "options": [
-        {"replaceWeapon": "combat_rifle", "withWeapon": ["heavy_combat_shotgun", "marksman_rifle", "heavy_smg", "heavy_carbine"]},
-        {
-          "replaceWeapon": "combat_rifle",
-          "withWeapon": [
-            "plasma_rifle",
-            "flamethrower",
-            "fusion_rifle",
-            "gravity_rifle",
-            "thermal_rifle",
-            "laser_sniper",
-            "heavy_machinegun",
-            "missile_launcher",
-            "laser_cannon",
-            "fusion_cannon",
-            "plasma_cannon",
-            "gravity_cannon",
-            "heavy_flamethrower",
-            "thermal_lance",
-            "autocannon",
-            "sniper_rifle"
-          ],
-          "modelLimit": "1/5"
-        },
-        {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
-        {
-          "addRule": [{"name": "Orbital Insertion", "id": "ambush"}, {"name": "Camouflage Cloak", "id": "evasive"}, "grappling_hook", {"name": "Death Mask", "id": "fear"}],
-          "modelLimit": "all",
-          "limit": 1
-        }
       ]
     },
     "assault_squad": {
@@ -2033,20 +1884,97 @@
       ]
     }
   },
-  "weapons": {
-    "artillery_missiles": {
-      "name": "Artillery Missiles",
-      "profiles": [
-        {"name": "Frag", "attacks": 2, "short": 36, "medium": 72, "ap": 3, "rules": ["heavy", "indirect", {"id": "blast", "x": 2}]},
-        {"name": "AT", "attacks": 3, "short": 36, "medium": 72, "ap": 6, "rules": ["heavy", "indirect"]}
-      ]
+  "units": {
+    "scout_marine": {
+      "name": "Scout Marine",
+      "description": "Elite trained marines specialized in infiltration and stealth tactics.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Scout Marine",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 6,
+          "weapons": ["combat_rifle", "handweapon"],
+          "rules": ["scout", {"id": "wounds", "x": 4}],
+          "options": [
+            {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
+            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+            {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "handweapon", "count": 2},
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
+                {"id": "twin_energy_handweapon", "count": 3},
+                {"id": "energy_greatweapon", "count": 2},
+                {"id": "energy_polearm", "count": 2}
+              ]
+            },
+            {"replaceWeapon": "combat_rifle", "withWeapon": ["heavy_combat_shotgun", "marksman_rifle", "heavy_smg", "heavy_carbine"]},
+            {
+              "replaceWeapon": "combat_rifle",
+              "withWeapon": [
+                "plasma_rifle",
+                "flamethrower",
+                "fusion_rifle",
+                "gravity_rifle",
+                "thermal_rifle",
+                "laser_sniper",
+                "heavy_machinegun",
+                "missile_launcher",
+                "laser_cannon",
+                "fusion_cannon",
+                "plasma_cannon",
+                "gravity_cannon",
+                "heavy_flamethrower",
+                "thermal_lance",
+                "autocannon",
+                "sniper_rifle"
+              ]
+            },
+            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+            {"addRule": [{"name": "Orbital Insertion", "id": "ambush"}, {"name": "Camouflage Cloak", "id": "evasive"}, "grappling_hook", {"name": "Death Mask", "id": "fear"}], "limit": 1}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "options": []
     },
-    "arch_machinegun": {"name": "Arch-Marine Machinegun", "attacks": 3, "short": 12, "medium": 24, "ap": 3, "rules": ["rapid_fire"]},
-    "arch_pistol": {"name": "Arch-Marine Pistol", "attacks": 2, "short": 6, "medium": 12, "ap": 6, "rules": [{"id": "deadly", "x": 1}]},
-    "arch_fist": {"name": "Arch-Marine Fist", "short": "Melee", "attacks": 1, "ap": 7, "rules": ["rending"]},
-    "arch_hammer": {"name": "Arch-Marine Hammer", "short": "Melee", "attacks": 1, "ap": 9, "rules": ["cumbersome"]},
-    "arch_claw": {"name": "Arch-Marine Claw", "short": "Melee", "attacks": 1, "ap": 5, "rules": ["rending"]},
-    "arch_sword": {"name": "Arch-Marine Blade", "profiles": [{"name": "elite", "short": "Melee", "attacks": 4, "ap": 6}, {"name": "Sweep", "short": "Melee", "attacks": 8, "ap": 3}]},
+    "vanguard_marine": {
+      "name": "Vanguard Marine",
+      "description": "Elite trained marines sworn to protect humankind.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Vanguard Marine",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
+          "min": 1,
+          "max": 1,
+          "rules": [{"id": "wounds", "x": 4}],
+          "options": [
+            {"replaceWeapon": "combat_rifle", "withWeapon": ["marksman_rifle", "heavy_smg"]},
+            {"replaceWeapon": "combat_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "gravity_rifle", "thermal_rifle"]},
+            {
+              "replaceWeapon": "combat_rifle",
+              "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "fusion_cannon", "plasma_cannon", "gravity_cannon", "heavy_flamethrower", "thermal_lance", "autocannon"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "weapons": {
     "laser_sniper": {"name": "Laser Sniper Rifle", "ap": 7, "attacks": 1, "short": 18, "medium": 36, "rules": ["precise"]},
     "plasma_repeater": {"name": "Plasma Repeater", "ap": 5, "attacks": 2, "short": 9, "medium": 18, "rules": ["assault", "overcharge"]},
     "hazard_flamethrower": {"name": "Chem-thrower", "ap": 2, "attacks": 3, "short": 6, "medium": 12, "rules": ["breaching", "poison"]},
