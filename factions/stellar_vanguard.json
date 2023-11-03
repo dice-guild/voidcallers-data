@@ -1852,7 +1852,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "wounds": 6,
+          "wounds": 4,
           "weapons": ["combat_rifle", "handweapon"],
           "rules": ["scout"],
           "options": [
@@ -1913,7 +1913,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "wounds": 6,
+          "wounds": 5,
           "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
           "min": 1,
           "max": 1,
@@ -1942,7 +1942,7 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "wounds": 8,
+          "wounds": 6,
           "rules": ["ambush"],
           "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 4}],
           "options": [

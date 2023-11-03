@@ -894,8 +894,8 @@
     "bomb_rack": {"name": "Bomb Rack", "attacks": 2, "short": 6, "ap": 3, "rules": [{"id": "blast", "x": 3}, "bomb"]},
     "aa_missiles": {"name": "AA Missile System", "attacks": 2, "short": 24, "medium": 48, "ap": 5, "rules": ["anti_air"]},
     "twin_carbine": {"name": "Twin Carbine", "attacks": 2, "short": 9, "medium": 18, "rules": ["assault"]},
-    "gravity_hammer": {"name": "Gravity Hammer", "attacks": 1, "ap": 8, "short": "Melee", "rules": ["gravity", {"id": "deadly", "x": 1}]},
-    "heavy_gravity_hammer": {"name": "Heavy Gravity Hammer", "attacks": 1, "ap": 8, "short": "Melee", "rules": ["gravity", {"id": "deadly", "x": 2}]}
+    "gravity_hammer": {"name": "Gravity Hammer", "attacks": 1, "ap": 8, "short": "Melee", "rules": ["brutal", {"id": "deadly", "x": 1}]},
+    "heavy_gravity_hammer": {"name": "Heavy Gravity Hammer", "attacks": 1, "ap": 8, "short": "Melee", "rules": ["brutal", {"id": "deadly", "x": 2}]}
   },
   "rules": {
     "data_link": {"name": "Data Link", "description": "This model's unit gains +1 Courage.", "points": 5},
