@@ -873,52 +873,6 @@
         {"addRule": [{"name": "Anti-Grav Engine", "id": "hover"}, {"name": "Armor Plating", "id": "light_armor"}], "modelLimit": "all"}
       ]
     },
-    "gravite_assault_squad": {
-      "name": "Gravite Assault Squad",
-      "description": "Marines clad in heavy gravite armor equipped to fight in close combat.",
-      "category": "elite",
-      "keywords": ["Infantry"],
-      "models": [
-        {
-          "name": "Gravite Assault Marine",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 9,
-          "reflexes": 6,
-          "rules": ["ambush"],
-          "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 2}],
-          "options": [
-            {
-              "replaceWeapon": "storm_rifle",
-              "withWeapon": [
-                "combi_rifle",
-                "twin_autocannon",
-                "thermal_lance",
-                "gravity_cannon",
-                "fusion_cannon",
-                "plasma_cannon",
-                "gatling_gun",
-                "missile_launcher",
-                "heavy_flamethrower",
-                "plasma_repeater",
-                "thermal_carbine"
-              ]
-            },
-            {"replaceWeapon": ["storm_rifle", {"id": "energy_handweapon", "count": 2}], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}]},
-            {
-              "replaceWeapon": {"id": "energy_handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 2}]
-            },
-            {"addWeapon": ["rocket_pod"], "modelLimit": "1/5"},
-            {"addRule": ["shield"]}
-          ],
-          "min": 5,
-          "max": 10
-        }
-      ]
-    },
     "honor_guard": {
       "name": "Honor Guard",
       "description": "Marines clad in golden armor and wings with dangerous melee weapons.",
@@ -1898,8 +1852,9 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
+          "wounds": 6,
           "weapons": ["combat_rifle", "handweapon"],
-          "rules": ["scout", {"id": "wounds", "x": 4}],
+          "rules": ["scout"],
           "options": [
             {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
             {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
@@ -1958,10 +1913,10 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
+          "wounds": 6,
           "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
           "min": 1,
           "max": 1,
-          "rules": [{"id": "wounds", "x": 4}],
           "options": [
             {"replaceWeapon": "combat_rifle", "withWeapon": ["marksman_rifle", "heavy_smg"]},
             {"replaceWeapon": "combat_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "gravity_rifle", "thermal_rifle"]},
@@ -1970,6 +1925,53 @@
               "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "fusion_cannon", "plasma_cannon", "gravity_cannon", "heavy_flamethrower", "thermal_lance", "autocannon"]
             }
           ]
+        }
+      ]
+    },
+    "gravite_assault_marine": {
+      "name": "Gravite Assault Marine",
+      "description": "Marines clad in heavy gravite armor equipped to fight in close combat.",
+      "category": "elite",
+      "keywords": ["Infantry"],
+      "models": [
+        {
+          "name": "Gravite Assault Marine",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "wounds": 8,
+          "rules": ["ambush"],
+          "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 4}],
+          "options": [
+            {
+              "replaceWeapon": "storm_rifle",
+              "withWeapon": [
+                "combi_rifle",
+                "twin_autocannon",
+                "thermal_lance",
+                "gravity_cannon",
+                "fusion_cannon",
+                "plasma_cannon",
+                "gatling_gun",
+                "missile_launcher",
+                "heavy_flamethrower",
+                "plasma_repeater",
+                "thermal_carbine"
+              ]
+            },
+            {"replaceWeapon": ["storm_rifle", {"id": "energy_handweapon", "count": 2}], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}]},
+            {
+              "replaceWeapon": {"id": "energy_handweapon", "count": 2},
+              "withWeapon": [{"id": "energy_powerweapon", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 2}]
+            },
+            {"addWeapon": ["rocket_pod"]},
+            {"addRule": ["shield"]}
+          ],
+          "min": 1,
+          "max": 1
         }
       ]
     }

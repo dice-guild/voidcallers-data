@@ -816,8 +816,8 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 5,
+          "wounds": 4,
           "weapons": ["auto_rifle", "light_handweapon"],
-          "rules": [{"id": "wounds", "x": 2}],
           "options": [
             {"replaceWeapon": ["auto_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["heavy_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
