@@ -922,7 +922,7 @@
     "crushing_hull": {"name": "Crushing Hull", "attacks": 3, "short": "Melee", "ap": 3},
     "grenade_launcher": {
       "name": "Grenade Launcher",
-      "profiles": [{"name": "Frag", "attacks": 1, "short": 12, "medium": 24, "rules": [{"id": "blast", "x": 6}]}, {"name": "AT", "attacks": 1, "short": 12, "medium": 24, "ap": 3, "damage": 2}]
+      "profiles": [{"name": "Frag", "attacks": 1, "short": 12, "medium": 24, "rules": [{"id": "blast", "x": 5}]}, {"name": "AT", "attacks": 1, "short": 12, "medium": 24, "ap": 3, "damage": 2}]
     },
     "tank_cannon": {"name": "Tank Cannon", "ap": 6, "attacks": 1, "medium": 48, "short": 24, "rules": [{"id": "blast", "x": 3}]},
     "tank_repeater": {"name": "Tank Repeater", "ap": 3, "attacks": 2, "short": 12, "medium": 24, "rules": [{"id": "blast", "x": 3}]},
