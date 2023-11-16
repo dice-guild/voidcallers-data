@@ -887,7 +887,7 @@
     "handgun": {"name": "Handgun", "ap": 3, "attacks": 1, "short": 12, "medium": 24},
     "repeater_handgun": {"name": "Repeater Handgun", "ap": 3, "attacks": 1, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
     "long_rifle": {"name": "Long Rifle", "ap": 4, "attacks": 1, "short": 18, "medium": 36, "rules": ["precise"]},
-    "sniper_rifle": {"name": "Sniper Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 2, "rules": ["precise"]},
+    "sniper_rifle": {"name": "Sniper Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 2, "damage": 2, "rules": ["precise"]},
     "carbine": {"name": "Carbine", "ap": 1, "attacks": 1, "short": 9, "medium": 18, "rules": ["assault"]},
     "heavy_carbine": {"name": "Heavy Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 2, "rules": ["assault"]},
     "assault_carbine": {"name": "Assault Carbine", "attacks": 3, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
@@ -1026,7 +1026,7 @@
       ]
     },
     "Pistol weapons": "",
-    "plasma_pistol": {"name": "Plasma Pistol", "ap": 5, "short": 6, "attacks": 1, "damage": 3, "rules": ["pistol", "overcharge"]},
+    "plasma_pistol": {"name": "Plasma Pistol", "ap": 5, "short": 6, "attacks": 1, "damage": 2, "rules": ["pistol", "overcharge"]},
     "fusion_pistol": {"name": "Fusion Pistol", "attacks": 2, "short": 6, "ap": 6, "rules": ["pistol", {"id": "deadly", "x": 1}]},
     "thermal_pistol": {"name": "Thermal Pistol", "attacks": 2, "short": 6, "ap": 3, "rules": ["breaching", {"id": "deadly", "x": 1}, "pistol"]},
     "gravity_pistol": {"name": "Gravity Pistol", "attacks": 2, "short": 6, "ap": 3, "rules": ["brutal", "pistol"]},
@@ -1085,12 +1085,12 @@
         {"name": "Charge", "attacks": 2, "short": 12, "medium": 24, "ap": 5, "rules": ["overheat"]}
       ]
     },
-    "plasma_rifle": {"name": "Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 1, "damage": 3},
+    "plasma_rifle": {"name": "Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 1, "damage": 2},
     "twin_plasma_rifle": {"name": "Twin Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 4},
     "heavy_plasma_rifle": {"rules": ["overcharge"], "name": "Heavy Plasma Rifle", "ap": 6, "medium": 36, "short": 18, "attacks": 1},
     "plasma_carbine": {"name": "Plasma Carbine", "rules": ["assault", "overcharge"], "ap": 5, "medium": 18, "short": 9, "attacks": 1},
     "twin_plasma_carbine": {"name": "Twin Plasma Carbine", "rules": ["assault", "overcharge"], "ap": 5, "medium": 18, "short": 9, "attacks": 2},
-    "fusion_rifle": {"name": "Fusion Rifle", "attacks": 1, "short": 9, "medium": 18, "ap": 6, "damage": 5, "rules": ["assault"]},
+    "fusion_rifle": {"name": "Fusion Rifle", "attacks": 1, "short": 9, "medium": 18, "ap": 6, "damage": 4, "rules": ["assault"]},
     "twin_fusion_rifle": {"name": "Twin Fusion Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 6, "rules": [{"id": "deadly", "x": 1}, "assault"]},
     "heavy_fusion_rifle": {"name": "Heavy Fusion Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 6, "rules": [{"id": "deadly", "x": 1}, "assault"]},
     "twin_heavy_fusion_rifle": {"name": "Twin Heavy Fusion Rifle", "attacks": 2, "short": 18, "medium": 36, "ap": 6, "rules": [{"id": "deadly", "x": 1}, "assault"]},
@@ -1117,7 +1117,7 @@
       "profiles": [{"name": "Frag", "attacks": 4, "short": 18, "medium": 36, "rules": [{"id": "blast", "x": 3}]}, {"name": "AT", "attacks": 4, "short": 18, "medium": 36, "ap": 6}]
     },
     "assault_missile_launcher": {"name": "Assault Missile Launcher", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "blast", "x": 2}]},
-    "laser_cannon": {"name": "Laser Cannon", "ap": 7, "attacks": 1, "short": 24, "medium": 48, "damage": 5, "rules": ["heavy"]},
+    "laser_cannon": {"name": "Laser Cannon", "ap": 7, "attacks": 1, "short": 24, "medium": 48, "damage": 4, "rules": ["heavy"]},
     "twin_laser_cannon": {"name": "Twin Laser Cannon", "ap": 7, "attacks": 2, "short": 24, "medium": 48, "rules": ["heavy", {"id": "deadly", "x": 1}]},
     "mining_laser": {"name": "Mining Laser", "attacks": 1, "short": 12, "medium": 24, "ap": 8, "rules": ["heavy", {"id": "deadly", "x": 1}]},
     "heavy_mining_laser": {"name": "Heavy Mining Laser", "attacks": 1, "short": 18, "medium": 36, "ap": 8, "rules": ["heavy", {"id": "deadly", "x": 2}]},
@@ -1169,7 +1169,7 @@
       ]
     },
     "twin_shard_carbine": {"name": "Twin Shard Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 1, "rules": ["rending", "assault"]},
-    "fusion_cannon": {"name": "Fusion Cannon", "ap": 7, "attacks": 1, "short": 18, "medium": 36, "damage": 5, "rules": ["heavy"]},
+    "fusion_cannon": {"name": "Fusion Cannon", "ap": 7, "attacks": 1, "short": 18, "medium": 36, "damage": 4, "rules": ["heavy"]},
     "twin_fusion_cannon": {"name": "Twin Fusion Cannon", "ap": 7, "attacks": 4, "short": 24, "medium": 48, "rules": [{"id": "deadly", "x": 1}, "heavy"]},
     "shard_sniper": {"name": "Shard Sniper", "attacks": 1, "short": 18, "medium": 36, "ap": 1, "rules": ["rending", "precise"]},
     "tank_hunter_cannon": {"name": "Tank Hunter Cannon", "attacks": 1, "short": 36, "medium": 72, "ap": 8, "rules": [{"id": "deadly", "x": 2}, "heavy"]},
@@ -1605,7 +1605,7 @@
       "inputs": ["x"],
       "description": "Multiply hits from this weapon by X.",
       "notes": "Small RNG discount to account for single shot randomness",
-      "points": ["rule.x", {"subtract": 1}, {"multiply": ["weapon.points", {"multiply": 0.8}]}]
+      "points": ["rule.x", {"subtract": 1}, {"multiply": ["weapon.points", {"multiply": 0.75}]}]
     },
     "emp": {"name": "EMP", "description": "This weapon gains +2 AP against units with the _Monster_ or _Vehicle_ keyword.", "points": ["weapon.attacks", {"multiply": 1}]},
     "breaching": {"name": "Breaching", "description": "Hits from this weapon ignore any cover bonuses.", "points": ["weapon.attacks", {"multiply": 0.5}]},

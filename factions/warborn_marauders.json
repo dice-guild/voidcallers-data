@@ -1394,7 +1394,7 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 5,
-          "wounds": 5,
+          "wounds": 3,
           "weapons": ["assault_carbine", "handweapon"],
           "options": [{"replaceWeapon": ["assault_carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]}],
           "min": 1,

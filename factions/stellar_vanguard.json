@@ -1852,21 +1852,21 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "wounds": 4,
-          "weapons": ["combat_rifle", "handweapon"],
+          "wounds": 2,
+          "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
           "rules": ["scout"],
           "options": [
             {"replaceWeapon": ["combat_rifle"], "withWeapon": ["combi_rifle", "twin_combat_rifle"]},
-            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
+            {"replaceWeapon": ["combat_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
             {
-              "replaceWeapon": {"id": "handweapon", "count": 2},
+              "replaceWeapon": {"id": "handweapon", "count": 3},
               "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
                 {"id": "twin_energy_handweapon", "count": 3},
-                {"id": "energy_greatweapon", "count": 2},
-                {"id": "energy_polearm", "count": 2}
+                {"id": "energy_greatweapon", "count": 3},
+                {"id": "energy_polearm", "count": 3}
               ]
             },
             {"replaceWeapon": "combat_rifle", "withWeapon": ["heavy_combat_shotgun", "marksman_rifle", "heavy_smg", "heavy_carbine"]},
@@ -1891,7 +1891,6 @@
                 "sniper_rifle"
               ]
             },
-            {"replaceWeapon": ["combat_rifle", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
             {"addRule": [{"name": "Orbital Insertion", "id": "ambush"}, {"name": "Camouflage Cloak", "id": "evasive"}, "grappling_hook", {"name": "Death Mask", "id": "fear"}], "limit": 1}
           ],
           "min": 1,
@@ -1913,7 +1912,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "wounds": 5,
+          "wounds": 3,
           "weapons": ["combat_rifle", {"id": "handweapon", "count": 2}],
           "min": 1,
           "max": 1,
@@ -1942,7 +1941,7 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "wounds": 6,
+          "wounds": 4,
           "rules": ["ambush"],
           "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 4}],
           "options": [
