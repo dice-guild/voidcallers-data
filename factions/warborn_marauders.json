@@ -387,27 +387,6 @@
         }
       ]
     },
-    "goblins": {
-      "name": "Goblins",
-      "description": "A horde of lowly goblins.",
-      "category": "core",
-      "keywords": ["Goblin", "Infantry"],
-      "models": [
-        {
-          "name": "Goblin",
-          "movement": 6,
-          "courage": 4,
-          "shoot": 5,
-          "fight": 5,
-          "defense": 4,
-          "reflexes": 5,
-          "weapons": ["heavy_carbine", "light_handweapon"],
-          "options": [{"replaceWeapon": ["heavy_carbine"], "withWeapon": ["assault_carbine"]}],
-          "min": 10,
-          "max": 20
-        }
-      ]
-    },
     "goblin_bikes": {
       "name": "Goblin Bikers",
       "description": "Only the best are selected to ride these fast moving death traps.",
@@ -531,38 +510,6 @@
         {"name": "Goblin Diver", "movement": 8, "courage": 5, "shoot": 5, "fight": 4, "defense": 4, "reflexes": 5, "weapons": ["shotgun", "light_handweapon"], "min": 9, "max": 19}
       ]
     },
-    "boss_mob": {
-      "name": "Brutes",
-      "description": "A group of big marauders ready to cause maximum havoc.",
-      "category": "core",
-      "models": [
-        {
-          "name": "Brute",
-          "movement": 6,
-          "courage": 5,
-          "shoot": 4,
-          "fight": 6,
-          "defense": 7,
-          "reflexes": 5,
-          "weapons": ["assault_carbine", {"id": "handweapon", "count": 2}],
-          "options": [
-            {"replaceWeapon": "assault_carbine", "withWeapon": ["twin_assault_carbine", "combi_rifle"]},
-            {"replaceWeapon": ["assault_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
-            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
-            {
-              "replaceWeapon": {"id": "handweapon", "count": 3},
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
-            },
-            {"addWeapon": ["attack_beast"], "modelLimit": 1},
-            {"addRule": [{"id": "resistant", "x": 3, "name": "Cyborg Body"}]},
-            {"addRule": ["champion"], "modelLimit": 1},
-            {"addRule": ["banner"], "modelLimit": 1}
-          ],
-          "min": 5,
-          "max": 10
-        }
-      ]
-    },
     "looter_mob": {
       "name": "Scavengers",
       "description": "A group of marauders obsessed with looting and upgrading shooting weapons. Can be equipped for various specialist roles.",
@@ -680,44 +627,6 @@
         {"replaceWeapon": ["assault_carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
         {"replaceWeapon": ["assault_carbine"], "withWeapon": ["plasma_rifle", "fusion_rifle", "flamethrower", "grenade_launcher", "light_machinegun"], "modelLimit": "1/5"},
         {"replaceWeapon": ["assault_carbine"], "withWeapon": ["missile_launcher", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "railgun"], "modelLimit": "1/5"}
-      ]
-    },
-    "ultra_boss_mob": {
-      "name": "Gravite Brutes",
-      "description": "A group of marauders bosses that are heavily armored and dangerous.",
-      "category": "elite",
-      "models": [
-        {
-          "name": "Gravite Brute",
-          "movement": 5,
-          "courage": 6,
-          "shoot": 4,
-          "fight": 6,
-          "defense": 9,
-          "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 2}],
-          "weapons": [{"id": "twin_assault_carbine", "count": 2}],
-          "options": [
-            {
-              "replaceWeapon": "twin_assault_carbine",
-              "withWeapon": [
-                "combi_rifle",
-                "missile_launcher",
-                "railgun",
-                "heavy_machinegun",
-                "plasma_cannon",
-                "fusion_cannon",
-                {"id": "energy_handweapon", "count": 3},
-                {"id": "energy_greatweapon", "count": 3},
-                {"id": "energy_powerweapon", "count": 3},
-                {"id": "twin_energy_handweapon", "count": 4}
-              ],
-              "limit": 2
-            }
-          ],
-          "min": 3,
-          "max": 6
-        }
       ]
     },
     "attack_beast_herd": {
@@ -1381,7 +1290,29 @@
     }
   },
   "units": {
-    "orc_mob": {
+    "goblin": {
+      "name": "Goblin",
+      "description": "A lowly goblin.",
+      "category": "core",
+      "keywords": ["Goblin", "Infantry"],
+      "models": [
+        {
+          "name": "Goblin",
+          "movement": 6,
+          "courage": 4,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 4,
+          "reflexes": 5,
+          "wounds": 2,
+          "weapons": ["heavy_carbine", "light_handweapon"],
+          "options": [{"replaceWeapon": ["heavy_carbine"], "withWeapon": ["assault_carbine"]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "marauder": {
       "name": "Marauder",
       "description": "An angry marauder.",
       "category": "core",
@@ -1395,8 +1326,80 @@
           "defense": 5,
           "reflexes": 5,
           "wounds": 3,
-          "weapons": ["assault_carbine", "handweapon"],
-          "options": [{"replaceWeapon": ["assault_carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]}],
+          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 3}],
+          "options": [{"replaceWeapon": ["heavy_pistol", {"id": "handweapon", "count": 3}], "withWeapon": [["assault_carbine", {"id": "handweapon", "count": 2}]]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "brute": {
+      "name": "Brutes",
+      "description": "A group of big marauders ready to cause maximum havoc.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Brute",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 4,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 5,
+          "wounds": 3,
+          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 3}],
+          "options": [
+            {"replaceWeapon": ["heavy_pistol", {"id": "handweapon", "count": 3}], "withWeapon": [["assault_carbine", {"id": "handweapon", "count": 2}]]},
+            {"replaceWeapon": "assault_carbine", "withWeapon": ["twin_assault_carbine", "combi_rifle"]},
+            {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "storm_rifle"]},
+            {
+              "replaceWeapon": {"id": "handweapon", "count": 3},
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "gravite_brute": {
+      "name": "Gravite Brute",
+      "description": "A group of marauders bosses that are heavily armored and dangerous.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Gravite Brute",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 4,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 5,
+          "wounds": 4,
+          "weapons": [{"id": "twin_assault_carbine"}, {"id": "handweapon", "count": 3}],
+          "options": [
+            {
+              "replaceWeapon": {"id": "handweapon", "count": 3},
+              "withWeapon": [
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_greatweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "twin_energy_handweapon", "count": 4}
+              ]
+            },
+            {
+              "replaceWeapon": "twin_assault_carbine",
+              "withWeapon": [
+                "combi_rifle",
+                "autocannon",
+                "fusion_cannon",
+                "plasma_cannon",
+                "gatling_gun",
+                "missile_launcher",
+                "heavy_flamethrower"
+              ]
+            }
+          ],
           "min": 1,
           "max": 1
         }

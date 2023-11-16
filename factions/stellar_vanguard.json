@@ -1949,7 +1949,7 @@
               "replaceWeapon": "storm_rifle",
               "withWeapon": [
                 "combi_rifle",
-                "twin_autocannon",
+                "autocannon",
                 "thermal_lance",
                 "gravity_cannon",
                 "fusion_cannon",
