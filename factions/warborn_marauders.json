@@ -1376,29 +1376,13 @@
           "defense": 9,
           "reflexes": 5,
           "wounds": 4,
-          "weapons": [{"id": "twin_assault_carbine"}, {"id": "handweapon", "count": 3}],
+          "weapons": [{"id": "assault_carbine"}, {"id": "handweapon", "count": 3}],
           "options": [
             {
               "replaceWeapon": {"id": "handweapon", "count": 3},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 3},
-                {"id": "energy_greatweapon", "count": 3},
-                {"id": "energy_powerweapon", "count": 3},
-                {"id": "twin_energy_handweapon", "count": 4}
-              ]
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_greatweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "twin_energy_handweapon", "count": 4}]
             },
-            {
-              "replaceWeapon": "twin_assault_carbine",
-              "withWeapon": [
-                "combi_rifle",
-                "autocannon",
-                "fusion_cannon",
-                "plasma_cannon",
-                "gatling_gun",
-                "missile_launcher",
-                "heavy_flamethrower"
-              ]
-            }
+            {"replaceWeapon": "assault_carbine", "withWeapon": ["combi_rifle", "autocannon", "fusion_cannon", "plasma_cannon", "gatling_gun", "missile_launcher", "heavy_flamethrower"]}
           ],
           "min": 1,
           "max": 1
