@@ -1027,7 +1027,7 @@
     "alchemical_grenade": {
       "name": "Chemical Bomb",
       "profiles": [
-        {"name": "Unstable", "attacks": "1", "ap": 5, "short": 6, "rules": ["grenade", "overcharge"]},
+        {"name": "Unstable", "attacks": "1", "ap": 5, "short": 6, "rules": ["grenade", "overheat"]},
         {"name": "Flash", "attacks": "1", "short": 6, "rules": ["grenade", "stun", {"id": "blast", "x": 3}]},
         {"name": "Siphon", "attacks": "1", "short": 6, "rules": ["grenade", "leeching", {"id": "blast", "x": 3}]}
       ]

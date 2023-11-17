@@ -899,8 +899,8 @@
     "mortar": {"name": "Mortar", "attacks": 1, "short": 24, "medium": 48, "ap": 1, "rules": ["heavy", "indirect", {"id": "blast", "x": 3}]},
     "poison_mortar": {"name": "Poison Mortar", "short": 12, "medium": 24, "ap": 3, "attacks": 1, "rules": [{"id": "blast", "x": 3}, "indirect", "poison"]},
     "heavy_mortar": {"name": "Heavy Mortar", "attacks": 1, "short": 24, "medium": 48, "ap": 2, "rules": ["heavy", "indirect", {"id": "blast", "x": 3}]},
-    "plasma_mortar": {"name": "Plasma Mortar", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "blast", "x": 2}, "overcharge", "indirect", "heavy"]},
-    "heavy_plasma_mortar": {"name": "Plasma Mortar", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "blast", "x": 5}, "overcharge", "indirect", "heavy"]},
+    "plasma_mortar": {"name": "Plasma Mortar", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "blast", "x": 2}, "overheat", "indirect", "heavy"]},
+    "heavy_plasma_mortar": {"name": "Plasma Mortar", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "blast", "x": 5}, "overheat", "indirect", "heavy"]},
     "pestilence_heavy_mortar": {"name": "Pestilence Heavy Mortar", "ap": 5, "attacks": 1, "medium": 48, "short": 24, "rules": [{"id": "blast", "x": 3}, "indirect", "poison"]},
     "handcannon": {"name": "Handcannon", "short": 9, "medium": 18, "ap": 5, "attacks": 1, "rules": [{"id": "blast", "x": 3}]},
     "cannon": {
@@ -1026,7 +1026,7 @@
       ]
     },
     "Pistol weapons": "",
-    "plasma_pistol": {"name": "Plasma Pistol", "ap": 5, "short": 6, "attacks": 1, "damage": 2, "rules": ["pistol", "overcharge"]},
+    "plasma_pistol": {"name": "Plasma Pistol", "ap": 5, "short": 6, "attacks": 1, "damage": 2, "rules": ["pistol", "overheat"]},
     "fusion_pistol": {"name": "Fusion Pistol", "attacks": 1, "short": 6, "ap": 6, "damage": 4, "rules": ["pistol"]},
     "thermal_pistol": {"name": "Thermal Pistol", "attacks": 1, "short": 6, "ap": 3, "damage": 3, "rules": ["breaching", "pistol"]},
     "gravity_pistol": {"name": "Gravity Pistol", "attacks": 2, "short": 6, "ap": 3, "rules": ["brutal", "pistol"]},
@@ -1053,7 +1053,7 @@
     "auto_carbine": {"name": "Auto Carbine", "attacks": 2, "short": 9, "medium": 18, "rules": ["assault"]},
     "assault_rifle": {"name": "Assault Rifle", "attacks": 2, "short": 12, "medium": 24, "rules": ["assault"]},
     "twin_heavy_carbine": {"name": "Twin Heavy Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
-    "plasma_assault_rifle": {"name": "Plasma Assault Rifle", "rules": ["assault", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 1},
+    "plasma_assault_rifle": {"name": "Plasma Assault Rifle", "rules": ["assault", "overheat"], "ap": 5, "medium": 24, "short": 12, "attacks": 1},
     "fist_carbine": {"name": "Fist Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
     "twin_auto_rifle": {"name": "Twin Auto Rifle", "attacks": 2, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
     "smg": {"name": "Submachine Gun", "attacks": 2, "short": 6, "medium": 12, "rules": ["assault"]},
@@ -1085,11 +1085,11 @@
         {"name": "Charge", "attacks": 1, "short": 12, "medium": 24, "ap": 5, "rules": ["overheat"]}
       ]
     },
-    "plasma_rifle": {"name": "Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 1, "damage": 3},
-    "twin_plasma_rifle": {"name": "Twin Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 4},
-    "heavy_plasma_rifle": {"rules": ["overcharge"], "name": "Heavy Plasma Rifle", "ap": 6, "medium": 36, "short": 18, "attacks": 1},
-    "plasma_carbine": {"name": "Plasma Carbine", "rules": ["assault", "overcharge"], "ap": 5, "medium": 18, "short": 9, "attacks": 1},
-    "twin_plasma_carbine": {"name": "Twin Plasma Carbine", "rules": ["assault", "overcharge"], "ap": 5, "medium": 18, "short": 9, "attacks": 2},
+    "plasma_rifle": {"name": "Plasma Rifle", "rules": ["rapid_fire", "overheat"], "ap": 5, "medium": 24, "short": 12, "attacks": 1, "damage": 3},
+    "twin_plasma_rifle": {"name": "Twin Plasma Rifle", "rules": ["rapid_fire", "overheat"], "ap": 5, "medium": 24, "short": 12, "attacks": 4},
+    "heavy_plasma_rifle": {"rules": ["overheat"], "name": "Heavy Plasma Rifle", "ap": 6, "medium": 36, "short": 18, "attacks": 1},
+    "plasma_carbine": {"name": "Plasma Carbine", "rules": ["assault", "overheat"], "ap": 5, "medium": 18, "short": 9, "attacks": 1},
+    "twin_plasma_carbine": {"name": "Twin Plasma Carbine", "rules": ["assault", "overheat"], "ap": 5, "medium": 18, "short": 9, "attacks": 2},
     "fusion_rifle": {"name": "Fusion Rifle", "attacks": 1, "short": 9, "medium": 18, "ap": 6, "damage": 4, "rules": ["assault"]},
     "twin_fusion_rifle": {"name": "Twin Fusion Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 6, "rules": [{"id": "deadly", "x": 1}, "assault"]},
     "heavy_fusion_rifle": {"name": "Heavy Fusion Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 6, "rules": [{"id": "deadly", "x": 1}, "assault"]},
@@ -1132,8 +1132,8 @@
     "twin_aa_light_machinegun": {"name": "Twin AA Light Machinegun", "attacks": 6, "short": 18, "medium": 36, "rules": ["anti_air"]},
     "light_laser_cannon": {"name": "Light Laser Cannon", "attacks": 1, "short": 15, "medium": 30, "ap": 6, "rules": ["heavy", {"id": "deadly", "x": 1}]},
     "twin_light_laser_cannon": {"name": "Twin Light Laser Cannon", "attacks": 2, "short": 15, "medium": 30, "ap": 6, "rules": ["heavy", {"id": "deadly", "x": 1}]},
-    "plasma_cannon": {"name": "Plasma Cannon", "rules": ["heavy", "overcharge", {"id": "blast", "x": 2}], "ap": 5, "medium": 36, "short": 18, "attacks": 2},
-    "twin_plasma_cannon": {"name": "Twin Plasma Cannon", "rules": ["heavy", "overcharge", {"id": "blast", "x": 2}], "ap": 5, "medium": 36, "short": 18, "attacks": 2},
+    "plasma_cannon": {"name": "Plasma Cannon", "rules": ["heavy", "overheat", {"id": "blast", "x": 2}], "ap": 5, "medium": 36, "short": 18, "attacks": 2},
+    "twin_plasma_cannon": {"name": "Twin Plasma Cannon", "rules": ["heavy", "overheat", {"id": "blast", "x": 2}], "ap": 5, "medium": 36, "short": 18, "attacks": 2},
     "fusion_bomb": {"name": "Fusion Bombs", "attacks": 1, "short": 6, "ap": 7, "rules": [{"id": "ammo", "x": 1}]},
     "hunter_missiles": {"name": "Hunter Missile", "attacks": 1, "short": 24, "medium": 48, "ap": 6, "rules": [{"id": "ammo", "x": 1}]},
     "autocannon": {"name": "Autocannon", "attacks": 4, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy"]},
@@ -1395,10 +1395,10 @@
       "flavor": "Cautious movement can be key to staying alive.",
       "cost": 1
     },
-    "overcharge": {
+    "overheat": {
       "phase": "activation",
       "subfactions": ["vigilance_focus"],
-      "name": "Overcharge",
+      "name": "overheat",
       "flavor": "By overcharging their weapons, some hits can pierce even heavily armored targets.",
       "description": "Use when a unit makes a _Shoot_ action. Hit rolls of 1 or 2 gain +1 AP.",
       "cost": 1
@@ -1770,8 +1770,7 @@
       "description": "This weapon always hits at -1 Accuracy. When scattering results from this weapon, it hits the closest unit within 3\" instead of just 1\".",
       "points": ["weapon.attacks"]
     },
-    "overcharge": {"name": "Overheat", "description": "Hit rolls of 9+ cause the firing unit to take 2 Shock.", "points": 0},
-    "overheat": {"name": "Overheat", "description": "Hit rolls of 9+ cause the firing unit to take 2 Shock.", "points": 0},
+    "overheat": {"name": "Overheat", "description": "Hit rolls of 9+ cause the firing unit to take 2 Shock.", "points": ["weapon.attacks", {"multiply": -1}],
     "pistol": {"name": "Pistol", "description": "This weapon may be used instead of a model's other weapons even while engaged in close combat.", "points": ["weapon.attacks", {"multiply": 1}]},
     "strider": {"name": "Strider", "description": "This model can cross difficult and dangerous terrain without penalty.", "points": 1},
     "rending": {"name": "Rending", "description": "Hit rolls of 1 or 2 gain +1 AP.", "points": ["weapon.attacks", {"multiply": 0.2}]},

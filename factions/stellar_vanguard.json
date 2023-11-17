@@ -1977,7 +1977,7 @@
   },
   "weapons": {
     "laser_sniper": {"name": "Laser Sniper Rifle", "ap": 7, "attacks": 1, "short": 18, "medium": 36, "rules": ["precise"]},
-    "plasma_repeater": {"name": "Plasma Repeater", "ap": 5, "attacks": 2, "short": 9, "medium": 18, "rules": ["assault", "overcharge"]},
+    "plasma_repeater": {"name": "Plasma Repeater", "ap": 5, "attacks": 2, "short": 9, "medium": 18, "rules": ["assault", "overheat"]},
     "hazard_flamethrower": {"name": "Chem-thrower", "ap": 2, "attacks": 3, "short": 6, "medium": 12, "rules": ["breaching", "poison"]},
     "hazard_launcher": {"name": "Chem-launcher", "ap": 3, "attacks": 1, "short": 12, "medium": 24, "rules": ["poison", {"id": "blast", "x": 2}]},
     "heavy_energy_axe": {"name": "Heavy Energy Axe", "attacks": 1, "short": "Melee", "ap": 5, "rules": ["rending"]}
