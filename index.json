@@ -1027,8 +1027,8 @@
     },
     "Pistol weapons": "",
     "plasma_pistol": {"name": "Plasma Pistol", "ap": 5, "short": 6, "attacks": 1, "damage": 2, "rules": ["pistol", "overcharge"]},
-    "fusion_pistol": {"name": "Fusion Pistol", "attacks": 2, "short": 6, "ap": 6, "damage": 4, "rules": ["pistol"]},
-    "thermal_pistol": {"name": "Thermal Pistol", "attacks": 2, "short": 6, "ap": 3, "damage": 3, "rules": ["breaching", "pistol"]},
+    "fusion_pistol": {"name": "Fusion Pistol", "attacks": 1, "short": 6, "ap": 6, "damage": 4, "rules": ["pistol"]},
+    "thermal_pistol": {"name": "Thermal Pistol", "attacks": 1, "short": 6, "ap": 3, "damage": 3, "rules": ["breaching", "pistol"]},
     "gravity_pistol": {"name": "Gravity Pistol", "attacks": 2, "short": 6, "ap": 3, "rules": ["brutal", "pistol"]},
     "shred_pistol": {"name": "Shred Pistol", "attacks": 4, "short": 6, "rules": ["rending"]},
     "fist_pistol": {"name": "Fist Pistol", "attacks": 6, "short": 6, "ap": 1, "rules": ["pistol"]},
@@ -1041,7 +1041,7 @@
     "shotgun_pistol": {"name": "Sawn-off Shotgun", "attacks": 2, "ap": 1, "short": 9, "rules": ["assault", "pistol"]},
     "hand_railgun": {"name": "Hand railgun", "attacks": 1, "short": 20, "medium": 25, "long": 30, "ap": 4, "rules": ["breaching"]},
     "Light weapons": "",
-    "marksman_rifle": {"name": "Combat Marksman Rifle", "ap": 2, "attacks": 2, "short": 24, "medium": 48, "rules": ["heavy"]},
+    "marksman_rifle": {"name": "Combat Marksman Rifle", "ap": 2, "attacks": 1, "short": 18, "medium": 36, "damage": 2, "rules": ["precise", "heavy"]},
     "storm_rifle": {"name": "Storm Rifle", "attacks": 2, "ap": 1, "short": 6, "medium": 12, "rules": ["rapid_fire"]},
     "shred_rifle": {"name": "Shred Rifle", "attacks": 4, "short": 9, "medium": 18, "rules": ["rending"]},
     "combat_shotgun": {"name": "Combat Shotgun", "attacks": 2, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", "brutal"]},
@@ -1057,7 +1057,7 @@
     "fist_carbine": {"name": "Fist Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
     "twin_auto_rifle": {"name": "Twin Auto Rifle", "attacks": 2, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
     "smg": {"name": "Submachine Gun", "attacks": 2, "short": 6, "medium": 12, "rules": ["assault"]},
-    "heavy_smg": {"name": "Heavy Submachine Gun", "attacks": 4, "short": 6, "medium": 12, "ap": 1, "rules": ["rending"]},
+    "heavy_smg": {"name": "Heavy Submachine Gun", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["rending"]},
     "twin_storm_rifle": {"name": "Twin Storm Rifle", "attacks": 2, "ap": 1, "short": 6, "medium": 12, "rules": ["rapid_fire"]},
     "rifle": {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24},
     "barb_rifle": {"name": "Poison Rifle", "attacks": 1, "short": 12, "medium": 24, "rules": ["rapid_fire", "poison"]},
@@ -1075,17 +1075,17 @@
     "rail_rifle": {"name": "Rail Rifle", "attacks": 1, "short": 15, "medium": 30, "ap": 5, "rules": ["breaching", "precise"]},
     "heavy_sniper_rifle": {"name": "Heavy Sniper Rifle", "attacks": 1, "ap": 3, "short": 24, "medium": 48, "rules": ["heavy", "precise", {"id": "deadly", "x": 1}]},
     "assassin_sniper": {"name": "Assassin's Sniper Rifle", "attacks": 1, "ap": 5, "short": 24, "medium": 48, "rules": ["precise", {"id": "deadly", "x": 3}]},
-    "thermal_rifle": {"name": "Thermal Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 3, "damage": 3, "rules": ["breaching"]},
-    "twin_thermal_rifle": {"name": "Twin Thermal Rifle", "attacks": 2, "short": 18, "medium": 36, "ap": 3, "damage": 3, "rules": ["breaching"]},
-    "thermal_carbine": {"name": "Thermal Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 3, "damage": 3, "rules": ["assault", "breaching"]},
+    "thermal_rifle": {"name": "Thermal Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 4, "damage": 3, "rules": ["breaching"]},
+    "twin_thermal_rifle": {"name": "Twin Thermal Rifle", "attacks": 2, "short": 18, "medium": 36, "ap": 4, "damage": 3, "rules": ["breaching"]},
+    "thermal_carbine": {"name": "Thermal Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 4, "damage": 3, "rules": ["assault", "breaching"]},
     "combi_rifle": {
       "name": "Combi-rifle",
       "profiles": [
         {"name": "Rifle", "rules": ["rapid_fire"], "ap": 2, "medium": 24, "short": 12, "attacks": 2},
-        {"name": "Charge", "attacks": 2, "short": 12, "medium": 24, "ap": 5, "rules": ["overheat"]}
+        {"name": "Charge", "attacks": 1, "short": 12, "medium": 24, "ap": 5, "rules": ["overheat"]}
       ]
     },
-    "plasma_rifle": {"name": "Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 1, "damage": 2},
+    "plasma_rifle": {"name": "Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 1, "damage": 3},
     "twin_plasma_rifle": {"name": "Twin Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 4},
     "heavy_plasma_rifle": {"rules": ["overcharge"], "name": "Heavy Plasma Rifle", "ap": 6, "medium": 36, "short": 18, "attacks": 1},
     "plasma_carbine": {"name": "Plasma Carbine", "rules": ["assault", "overcharge"], "ap": 5, "medium": 18, "short": 9, "attacks": 1},
@@ -1186,9 +1186,9 @@
     "heavy_seismic_cannon": {"name": "Heavy Seismic Cannon", "attacks": 2, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy", {"id": "shocking", "x": 1}]},
     "fusion_beamer": {"name": "Fission Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "intensity", "x": 2}, {"id": "deadly", "x": 1}]},
     "twin_fusion_beamer": {"name": "Twin Fission Cannon", "attacks": 2, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "intensity", "x": 2}, {"id": "deadly", "x": 1}]},
-    "thermal_lance": {"name": "Thermal Lance", "attacks": 1, "short": 24, "medium": 48, "ap": 6, "damage": 3, "rules": ["breaching", "heavy"]},
-    "twin_thermal_lance": {"name": "Twin Thermal Lance", "attacks": 2, "short": 24, "medium": 48, "ap": 6, "damage": 3, "rules": ["heavy", "breaching"]},
-    "heavy_thermal_lance": {"name": "Heavy Thermal Lance", "attacks": 1, "short": 30, "medium": 60, "ap": 8, "damage": 3, "rules": ["breaching", "heavy"]},
+    "thermal_lance": {"name": "Thermal Lance", "attacks": 1, "short": 24, "medium": 48, "ap": 5, "damage": 4, "rules": ["breaching", "heavy"]},
+    "twin_thermal_lance": {"name": "Twin Thermal Lance", "attacks": 2, "short": 24, "medium": 48, "ap": 5, "damage": 4, "rules": ["heavy", "breaching"]},
+    "heavy_thermal_lance": {"name": "Heavy Thermal Lance", "attacks": 1, "short": 30, "medium": 60, "ap": 6, "damage": 4, "rules": ["breaching", "heavy"]},
     "twin_heavy_thermal_lance": {"name": "Twin Heavy Thermal Lance", "attacks": 2, "short": 30, "medium": 60, "ap": 8, "damage": 2, "rules": ["heavy", "breaching"]},
     "tesla_cannon": {"name": "Tesla Cannon", "attacks": 1, "ap": 4, "short": 12, "medium": 24, "rules": ["assault", {"id": "blast", "x": 3}]},
     "twin_tesla_cannon": {"name": "Twin Tesla Cannon", "attacks": 2, "ap": 4, "short": 12, "medium": 24, "rules": ["assault", {"id": "blast", "x": 3}]},
@@ -1598,7 +1598,7 @@
     "rapid_fire": {
       "name": "Rapid Fire",
       "description": "When shooting with this weapon, a model may choose to fire twice with it. If it does, halve both the Short and Long ranges of the weapon.",
-      "points": ["weapon.points", {"multiply": 0.5}]
+      "points": ["weapon.points", {"multiply": 0.25}]
     },
     "blast": {
       "name": "Blast",
@@ -1682,7 +1682,12 @@
     "crack_shot": {"name": "Crack Shot", "description": "Hits rolls of 1 or 2 from shooting attacks made by this model ignore the benefit of cover.", "points": [1]},
     "stubborn": {"name": "Stubborn", "description": "This model adds 1 to Courage tests when removing Shock.", "points": [1]},
     "reluctant": {"name": "Reluctant", "description": "This model subtracts 1 from Courage tests when removing Shock.", "points": [-1]},
-    "power": {"name": "Magic", "inputs": ["x"], "description": "At the start or end of any action, this unit may cast up to _x_ Powers.", "points": [20, {"multiply": "rule.x"}]},
+    "power": {
+      "name": "Magic",
+      "inputs": ["x"],
+      "description": "This unit may cast Powers at the start or end of any action. It may use up _x_ Powers per activation. ",
+      "points": [20, {"multiply": "rule.x"}]
+    },
     "conclave": {
       "name": "Conclave",
       "description": "This unit may use _Powers_ and attempt to stop _Powers_ each round based on the total number of model with this ability: \n * 1-5 Models: 1 Power \n * 6+ Models: 2 Powers \n * 11+ Models: 3 Powers",
@@ -1725,11 +1730,7 @@
       "points": ["rule.x"]
     },
     "reload": {"name": "Reload", "description": "After firing, a unit must spend 1 action to reload this weapon before it can be fired again.", "points": ["weapon.attacks", {"multiply": -1}]},
-    "precise": {
-      "name": "Precise",
-      "description": "This weapon may ignore the Long Range penalty. You may choose which model is hit and hits may not be reassigned to other friendly units.",
-      "points": 1
-    },
+    "precise": {"name": "Precise", "description": "This weapon may ignore the Long Range penalty.", "points": 1},
     "assassin": {"name": "Assassin", "description": "You may choose which model is hit by weapons equipped by this model and hits may not be reassigned to other friendly units.", "points": 5},
     "aircraft": {
       "name": "Aircraft",

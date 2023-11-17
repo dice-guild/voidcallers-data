@@ -61,32 +61,6 @@
         }
       ]
     },
-    "cult_psychic": {
-      "name": "Cult Psychic",
-      "description": "A cultist leader with poweful psychic abilities.",
-      "category": "hero",
-      "models": [
-        {
-          "name": "Cult Psychic",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 6,
-          "reflexes": 6,
-          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
-          "weapons": ["pistol", {"id": "light_handweapon", "count": 2}],
-          "options": [
-            {"replaceWeapon": "pistol", "withWeapon": ["heavy_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
-            {"replaceWeapon": [{"id": "light_handweapon", "count": 2}], "withWeapon": [{"id": "energy_polearm", "count": 2}, {"id": "bone_sword", "count": 2}]},
-            {"addRule": ["companion"]},
-            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
     "outrider_assassin": {
       "name": "Cult Outrider Assassin",
       "description": "A highly mobile assassin mounted on a dirt bike.",
@@ -317,32 +291,6 @@
           "min": 3,
           "max": 6
         }
-      ]
-    },
-    "acolytes": {
-      "name": "Acolytes",
-      "description": "A disfigured squad of humans turned to the cult.",
-      "category": "core",
-      "models": [
-        {
-          "name": "Acolyte Sergeant",
-          "movement": 6,
-          "courage": 5,
-          "shoot": 5,
-          "fight": 6,
-          "defense": 6,
-          "reflexes": 5,
-          "weapons": [{"id": "handweapon", "count": 2}, "pistol"],
-          "options": [{"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [{"id": "bone_sword", "count": 2}]}],
-          "min": 1,
-          "max": 1
-        },
-        {"name": "Acolyte", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 6, "reflexes": 5, "weapons": [{"id": "handweapon", "count": 2}, "pistol"], "min": 4, "max": 9}
-      ],
-      "options": [
-        {"replaceWeapon": "pistol", "withWeapon": ["flamethrower_pistol"]},
-        {"replaceWeapon": ["pistol", {"id": "handweapon", "count": 2}], "withWeapon": ["demolition_charges", {"id": "rock_cutter", "count": 2}], "modelLimit": "2/5"},
-        {"addRule": "banner", "modelLimit": 1}
       ]
     },
     "metamorphs": {
@@ -803,6 +751,32 @@
     }
   },
   "units": {
+    "cult_psychic": {
+      "name": "Cult Psychic",
+      "description": "A cultist with poweful psychic abilities.",
+      "category": "hero",
+      "models": [ 
+        {
+          "name": "Cult Psychic",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "wounds": 4,
+          "rules": [{"id": "power", "x": 1}],
+          "weapons": ["pistol", {"id": "light_handweapon", "count": 2}],
+          "options": [
+            {"replaceWeapon": "pistol", "withWeapon": ["heavy_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
+            {"replaceWeapon": [{"id": "light_handweapon", "count": 2}], "withWeapon": [{"id": "energy_polearm", "count": 2}, {"id": "bone_sword", "count": 2}]},
+            {"addRule": ["companion"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
     "neophytes": {
       "name": "Neophyte",
       "description": "A group of miners and other manual laborers who have revolted and turned to the cult.",
@@ -817,17 +791,42 @@
           "defense": 5,
           "reflexes": 5,
           "wounds": 2,
-          "weapons": ["auto_rifle", "light_handweapon"],
+          "weapons": ["auto_rifle", {"id": "light_handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": ["auto_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
+            {"replaceWeapon": ["auto_rifle", {"id": "light_handweapon", "count": 2}], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 3}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["heavy_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
             {
-              "replaceWeapon": {"id": "light_handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
+              "replaceWeapon": {"id": "light_handweapon", "count": 3},
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}]
             },
             {"replaceWeapon": "auto_rifle", "withWeapon": "shotgun"},
             {"replaceWeapon": "auto_rifle", "withWeapon": ["flamethrower", "grenade_launcher", "web_gun"]},
             {"replaceWeapon": "auto_rifle", "withWeapon": ["light_machinegun", "seismic_cannon", "mining_laser"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "acolytes": {
+      "name": "Acolyte",
+      "description": "A disfigured human turned to the cult.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Acolyte",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 5,
+          "wounds": 3,
+          "weapons": [{"id": "handweapon", "count": 3}, "pistol"],
+          "options": [
+            {"replaceWeapon": "pistol", "withWeapon": ["flamethrower_pistol"]},
+            {"replaceWeapon": {"id": "handweapon", "count": 3}, "withWeapon": [{"id": "bone_sword", "count": 3}]},
+            {"replaceWeapon": ["pistol", {"id": "handweapon", "count": 3}], "withWeapon": ["demolition_charges", {"id": "rock_cutter", "count": 3}]}
           ],
           "min": 1,
           "max": 1
@@ -867,7 +866,7 @@
     "web_pistol": {"name": "Web Pistol", "attacks": 2, "short": 6, "ap": 1, "rules": ["pistol", {"id": "shocking", "x": 2}]},
     "acidic_jaws": {"name": "Acidic Jaws", "attacks": 1, "short": "Melee", "ap": 2},
     "meat_hooks": {"name": "Meat Hooks", "attacks": 2, "short": 6, "ap": 1, "rules": ["assault"]},
-    "bone_sword": {"name": "Bone Sword", "attacks": 1, "short": "Melee", "ap": 2},
+    "bone_sword": {"name": "Bone Sword", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["poison"]},
     "legend_sacrificial_dagger": {"name": "Sacrificial Dagger", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["sacrifice"]}
   },
   "rules": {
