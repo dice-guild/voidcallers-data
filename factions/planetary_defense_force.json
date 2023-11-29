@@ -1270,10 +1270,10 @@
     "titan_battle_cannon": {"name": "Titan Battle Cannon", "attacks": 2, "ap": 8, "short": 36, "medium": 72, "rules": ["heavy", {"id": "blast", "x": 3}]},
     "adv_defense_rifle": {
       "name": "Advanced Defense Rifle",
-      "profiles": [{"name": "Volley", "attacks": 2, "ap": 0, "medium": 24, "short": 12}, {"name": "Charged", "attacks": 1, "ap": 2, "medium": 18, "short": 9, "rules": ["overheat"]}]
+      "profiles": [{"name": "Volley", "attacks": 2, "ap": 0, "medium": 24, "short": 12}, {"name": "Charged", "attacks": 1, "ap": 2, "medium": 18, "short": 9, "rules": ["overcharge"]}]
     },
     "auto_carbine": {"name": "Auto Carbine", "attacks": 2, "ap": 0, "medium": 18, "short": 9, "rules": ["assault"]},
-    "giant_plasma_cannon": {"name": "Giant Plasma Cannon", "attacks": 2, "ap": 6, "short": 36, "medium": 72, "rules": [{"id": "blast", "x": 3}, "heavy", "overheat"]},
+    "giant_plasma_cannon": {"name": "Giant Plasma Cannon", "attacks": 2, "ap": 6, "short": 36, "medium": 72, "rules": [{"id": "blast", "x": 3}, "heavy", "overcharge"]},
     "giant_fusion_cannon": {"name": "Giant Fusion Cannon", "attacks": 2, "ap": 8, "short": 36, "medium": 72, "rules": [{"id": "blast", "x": 3}, {"id": "deadly", "x": 1}, "heavy"]},
     "godslayer_cannon": {"name": "Godslayer Cannon", "attacks": 3, "ap": 10, "short": 60, "medium": 120, "rules": ["heavy", {"id": "deadly", "x": 2}]},
     "doom_cannon": {"name": "Doom Cannon", "attacks": 2, "ap": 8, "short": 30, "medium": 60, "rules": ["heavy", {"id": "blast", "x": 5}]},
